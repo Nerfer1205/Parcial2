@@ -1,0 +1,128 @@
+
+package InterfazParcial;
+
+import static java.awt.Color.GREEN;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.io.FileNotFoundException;
+import java.util.ArrayList;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+public class GUIInterfazParcial extends JFrame implements ActionListener {
+
+    ArrayList<String> Paises;
+    String pais;
+    private Persistencia a = new Persistencia();
+    ArrayList<String> Resultados= new ArrayList<>();
+    
+    public GUIInterfazParcial(){
+    
+        setSize(580,150);
+        setTitle("Calculadora Binaria");
+        setLayout(null);
+        setLocationRelativeTo(null);
+        PanelBotones();
+        setDefaultCloseOperation(EXIT_ON_CLOSE);
+    }
+    
+    public void PanelBotones(){
+    
+        JPanel Interfaz = new JPanel();
+        
+        Interfaz.setLayout(null);
+        Interfaz.setSize(580,150);
+        Interfaz.setBounds(0, 0, 600, 200);
+        
+        
+        Paises = new ArrayList();
+        Paises.add("China");
+        Paises.add("Italia");
+        Paises.add("España");
+        Paises.add("Francia");
+        Paises.add("EE.UU");
+        Paises.add("Otro");
+        
+        int posx=15;
+        int posy=10;
+        for(int i=0;i<Paises.size();i++){
+            
+            JButton GeneralBotones = new JButton(Paises.get(i));
+            GeneralBotones.addActionListener(this);
+            GeneralBotones.setBounds(posx, posy, 85, 25);
+            posx=posx+90;
+            
+            Interfaz.add(GeneralBotones);    
+        }
+        
+        JButton Recomendaciones = new JButton("Ver recomendaciones");
+        Recomendaciones.addActionListener(this);
+        Recomendaciones.setBounds(75, 50, 175, 25);
+        Interfaz.add(Recomendaciones);
+        
+        JButton Resultados = new JButton("Ver Resultados");
+        Resultados.addActionListener(this);
+        Resultados.setBounds(300, 50, 175, 25);
+        Interfaz.add(Resultados);
+        
+        this.getContentPane().add(Interfaz);  
+    }
+            
+            
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        if (e.getActionCommand().equals("Ver Recomendaciones")){
+            GUIRecomendaciones Reco = new GUIRecomendaciones();
+            Reco.setVisible(true);
+            this.setVisible(false);
+            
+        }
+        
+        if (e.getActionCommand().equals("China")){
+            pais = "China";
+            Resultados.add(pais);
+            a.escribirArchivo(Resultados);
+            
+        }
+        
+        if (e.getActionCommand().equals("España")){
+            pais = "España";
+            Resultados.add(pais);
+            a.escribirArchivo(Resultados);
+        }
+        
+        if (e.getActionCommand().equals("Italia")){
+            pais = "Italia";
+            Resultados.add(pais);
+            a.escribirArchivo(Resultados);
+            
+        }
+        
+        if (e.getActionCommand().equals("EE.UU")){
+            pais = "EE.UU";
+            Resultados.add(pais);
+            a.escribirArchivo(Resultados);
+            
+        }
+        
+        if (e.getActionCommand().equals("Francia")){
+            pais = "Francia";
+             Resultados.add(pais);
+            a.escribirArchivo(Resultados);
+            
+        }
+        
+        if (e.getActionCommand().equals("Otros")){
+            pais = "Otros";
+            Resultados.add(pais);
+            a.escribirArchivo(Resultados);
+            
+        }
+         if (e.getActionCommand().equals("Ver Resultados")){
+        }
+    }
+    
+}
