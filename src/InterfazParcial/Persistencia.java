@@ -11,6 +11,7 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
 import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -20,10 +21,10 @@ import java.util.logging.Logger;
  * @author mile1
  */
 public class Persistencia {
-    public void escribirArchivo(String pais) throws FileNotFoundException{
-         DataOutputStream salida= new DataOutputStream(new FileOutputStream("paises.txt"));
+    public void escribirArchivo(ArrayList<String> pais) throws FileNotFoundException{
         try {
-            salida.writeChars(pais);
+            ObjectOutputStream salida= new ObjectOutputStream(new FileOutputStream("paises.txt"));
+            salida.writeObject(pais);
         } catch (IOException ex) {
         }
     }
@@ -37,9 +38,5 @@ public class Persistencia {
         } catch (ClassNotFoundException ex) {
         }
         return obj1;
-    }
-
-    void escribirArchivo(ArrayList<String> Resultados) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }

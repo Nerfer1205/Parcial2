@@ -41,51 +41,63 @@ public class GUIResultados extends javax.swing.JFrame {
         lbNumEEUU = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        getContentPane().setLayout(null);
 
         lbChina.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         lbChina.setText("China :");
-        getContentPane().add(lbChina, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 50, -1, -1));
+        getContentPane().add(lbChina);
+        lbChina.setBounds(70, 50, 48, 17);
 
         lbEspaña.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         lbEspaña.setText("España :");
-        getContentPane().add(lbEspaña, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 80, -1, -1));
+        getContentPane().add(lbEspaña);
+        lbEspaña.setBounds(70, 80, 59, 17);
 
         lbItalia.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         lbItalia.setText("Italia :");
-        getContentPane().add(lbItalia, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 110, -1, -1));
+        getContentPane().add(lbItalia);
+        lbItalia.setBounds(70, 110, 44, 17);
 
         lbFrancia.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         lbFrancia.setText("Francia:");
-        getContentPane().add(lbFrancia, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 140, -1, -1));
+        getContentPane().add(lbFrancia);
+        lbFrancia.setBounds(70, 140, 54, 17);
 
         lbEEUU.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         lbEEUU.setText("EE.UU:");
-        getContentPane().add(lbEEUU, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 170, -1, -1));
+        getContentPane().add(lbEEUU);
+        lbEEUU.setBounds(70, 170, 47, 17);
 
         lbOtros.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         lbOtros.setText("Otros:");
-        getContentPane().add(lbOtros, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 200, -1, -1));
+        getContentPane().add(lbOtros);
+        lbOtros.setBounds(70, 200, 44, 17);
 
         lbNumOtros.setText("Numero");
-        getContentPane().add(lbNumOtros, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 200, -1, -1));
+        getContentPane().add(lbNumOtros);
+        lbNumOtros.setBounds(190, 200, 37, 14);
 
         jLabel2.setText("Numero:");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 50, -1, -1));
+        getContentPane().add(jLabel2);
+        jLabel2.setBounds(190, 50, 41, 14);
         jLabel2.getAccessibleContext().setAccessibleName("lbNumChi");
 
         jLabel3.setText("Numero");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 80, -1, -1));
+        getContentPane().add(jLabel3);
+        jLabel3.setBounds(190, 80, 37, 14);
         jLabel3.getAccessibleContext().setAccessibleName("lbNumEsp");
 
         lbNumIta.setText("Numero");
-        getContentPane().add(lbNumIta, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 110, -1, -1));
+        getContentPane().add(lbNumIta);
+        lbNumIta.setBounds(190, 110, 37, 14);
 
         lbNumFran.setText("Numero");
-        getContentPane().add(lbNumFran, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 140, -1, -1));
+        getContentPane().add(lbNumFran);
+        lbNumFran.setBounds(190, 140, 37, 14);
 
         lbNumEEUU.setText("Numero");
-        getContentPane().add(lbNumEEUU, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 170, -1, -1));
+        getContentPane().add(lbNumEEUU);
+        lbNumEEUU.setBounds(190, 170, 37, 14);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

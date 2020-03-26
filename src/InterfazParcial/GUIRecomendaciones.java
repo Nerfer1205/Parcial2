@@ -35,18 +35,21 @@ public class GUIRecomendaciones extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setPreferredSize(new java.awt.Dimension(700, 700));
-        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        getContentPane().setLayout(null);
 
         lbRecomendaciones.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         lbRecomendaciones.setText("Recomendaciones");
-        getContentPane().add(lbRecomendaciones, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 10, -1, 20));
+        getContentPane().add(lbRecomendaciones);
+        lbRecomendaciones.setBounds(270, 10, 124, 20);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazParcial/Captura.JPG"))); // NOI18N
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 40, 640, 590));
+        getContentPane().add(jLabel1);
+        jLabel1.setBounds(20, 40, 640, 590);
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel2.setText("Si tiene algunos de los sintomas anteriores, por favor llame inmediatamente al 123.");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 640, -1, 20));
+        getContentPane().add(jLabel2);
+        jLabel2.setBounds(50, 640, 568, 20);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

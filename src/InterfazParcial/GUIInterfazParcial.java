@@ -82,46 +82,73 @@ public class GUIInterfazParcial extends JFrame implements ActionListener {
         }
         
         if (e.getActionCommand().equals("China")){
-            pais = "China";
-            Resultados.add(pais);
-            a.escribirArchivo(Resultados);
+            try {
+                pais = "China";
+                Resultados.add(pais);
+                a.escribirArchivo(Resultados);
+            } catch (FileNotFoundException ex) {
+                Logger.getLogger(GUIInterfazParcial.class.getName()).log(Level.SEVERE, null, ex);
+            }
             
         }
         
         if (e.getActionCommand().equals("España")){
             pais = "España";
             Resultados.add(pais);
-            a.escribirArchivo(Resultados);
+            try {
+                a.escribirArchivo(Resultados);
+            } catch (FileNotFoundException ex) {
+                Logger.getLogger(GUIInterfazParcial.class.getName()).log(Level.SEVERE, null, ex);
+            }
         }
         
         if (e.getActionCommand().equals("Italia")){
-            pais = "Italia";
-            Resultados.add(pais);
-            a.escribirArchivo(Resultados);
+            try {
+                pais = "Italia";
+                Resultados.add(pais);
+                a.escribirArchivo(Resultados);
+            } catch (FileNotFoundException ex) {
+                Logger.getLogger(GUIInterfazParcial.class.getName()).log(Level.SEVERE, null, ex);
+            }
             
         }
         
         if (e.getActionCommand().equals("EE.UU")){
-            pais = "EE.UU";
-            Resultados.add(pais);
-            a.escribirArchivo(Resultados);
+            try {
+                pais = "EE.UU";
+                Resultados.add(pais);
+                a.escribirArchivo(Resultados);
+            } catch (FileNotFoundException ex) {
+                Logger.getLogger(GUIInterfazParcial.class.getName()).log(Level.SEVERE, null, ex);
+            }
             
         }
         
         if (e.getActionCommand().equals("Francia")){
-            pais = "Francia";
-             Resultados.add(pais);
-            a.escribirArchivo(Resultados);
+            try {
+                pais = "Francia";
+                Resultados.add(pais);
+                a.escribirArchivo(Resultados);
+            } catch (FileNotFoundException ex) {
+                Logger.getLogger(GUIInterfazParcial.class.getName()).log(Level.SEVERE, null, ex);
+            }
             
         }
         
-        if (e.getActionCommand().equals("Otros")){
-            pais = "Otros";
-            Resultados.add(pais);
-            a.escribirArchivo(Resultados);
+        if (e.getActionCommand().equals("Otro")){
+            try {
+                pais = "Otro";
+                Resultados.add(pais);
+                a.escribirArchivo(Resultados);
+            } catch (FileNotFoundException ex) {
+                Logger.getLogger(GUIInterfazParcial.class.getName()).log(Level.SEVERE, null, ex);
+            }
             
         }
          if (e.getActionCommand().equals("Ver Resultados")){
+             for (int i = 0; i < Resultados.size(); i++) {
+                 System.out.println(Resultados.get(i));
+             }
         }
     }
     
