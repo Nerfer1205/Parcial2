@@ -74,7 +74,7 @@ public class GUIInterfazParcial extends JFrame implements ActionListener {
             
     @Override
     public void actionPerformed(ActionEvent e) {
-        if (e.getActionCommand().equals("Ver Recomendaciones")){
+        if (e.getActionCommand().equals("Ver recomendaciones")){
             GUIRecomendaciones Reco = new GUIRecomendaciones();
             Reco.setVisible(true);
             this.setVisible(false);
