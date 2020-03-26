@@ -33,14 +33,15 @@ public class GUIResultados extends javax.swing.JFrame {
         lbFrancia = new javax.swing.JLabel();
         lbEEUU = new javax.swing.JLabel();
         lbOtros = new javax.swing.JLabel();
-        lbNumOtros = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        lbNumIta = new javax.swing.JLabel();
-        lbNumFran = new javax.swing.JLabel();
-        lbNumEEUU = new javax.swing.JLabel();
+        OTROS = new javax.swing.JLabel();
+        china = new javax.swing.JLabel();
+        Espania = new javax.swing.JLabel();
+        italia = new javax.swing.JLabel();
+        francia = new javax.swing.JLabel();
+        EEUU = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setMinimumSize(new java.awt.Dimension(400, 400));
         getContentPane().setLayout(null);
 
         lbChina.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
@@ -73,31 +74,31 @@ public class GUIResultados extends javax.swing.JFrame {
         getContentPane().add(lbOtros);
         lbOtros.setBounds(70, 200, 44, 17);
 
-        lbNumOtros.setText("Numero");
-        getContentPane().add(lbNumOtros);
-        lbNumOtros.setBounds(190, 200, 37, 14);
+        OTROS.setText("0");
+        getContentPane().add(OTROS);
+        OTROS.setBounds(180, 194, 40, 20);
 
-        jLabel2.setText("Numero:");
-        getContentPane().add(jLabel2);
-        jLabel2.setBounds(190, 50, 41, 14);
-        jLabel2.getAccessibleContext().setAccessibleName("lbNumChi");
+        china.setText("0");
+        getContentPane().add(china);
+        china.setBounds(180, 50, 30, 20);
+        china.getAccessibleContext().setAccessibleName("lbNumChi");
 
-        jLabel3.setText("Numero");
-        getContentPane().add(jLabel3);
-        jLabel3.setBounds(190, 80, 37, 14);
-        jLabel3.getAccessibleContext().setAccessibleName("lbNumEsp");
+        Espania.setText("0");
+        getContentPane().add(Espania);
+        Espania.setBounds(180, 80, 40, 20);
+        Espania.getAccessibleContext().setAccessibleName("lbNumEsp");
 
-        lbNumIta.setText("Numero");
-        getContentPane().add(lbNumIta);
-        lbNumIta.setBounds(190, 110, 37, 14);
+        italia.setText("0");
+        getContentPane().add(italia);
+        italia.setBounds(180, 110, 40, 20);
 
-        lbNumFran.setText("Numero");
-        getContentPane().add(lbNumFran);
-        lbNumFran.setBounds(190, 140, 37, 14);
+        francia.setText("0");
+        getContentPane().add(francia);
+        francia.setBounds(180, 140, 30, 20);
 
-        lbNumEEUU.setText("Numero");
-        getContentPane().add(lbNumEEUU);
-        lbNumEEUU.setBounds(190, 170, 37, 14);
+        EEUU.setText("0");
+        getContentPane().add(EEUU);
+        EEUU.setBounds(180, 164, 30, 30);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -139,17 +140,17 @@ public class GUIResultados extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
+    public javax.swing.JLabel EEUU;
+    public javax.swing.JLabel Espania;
+    public javax.swing.JLabel OTROS;
+    public javax.swing.JLabel china;
+    public javax.swing.JLabel francia;
+    public javax.swing.JLabel italia;
     private javax.swing.JLabel lbChina;
     private javax.swing.JLabel lbEEUU;
     private javax.swing.JLabel lbEspaña;
     private javax.swing.JLabel lbFrancia;
     private javax.swing.JLabel lbItalia;
-    private javax.swing.JLabel lbNumEEUU;
-    private javax.swing.JLabel lbNumFran;
-    private javax.swing.JLabel lbNumIta;
-    private javax.swing.JLabel lbNumOtros;
     private javax.swing.JLabel lbOtros;
     // End of variables declaration//GEN-END:variables
 }

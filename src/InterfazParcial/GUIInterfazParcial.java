@@ -146,8 +146,39 @@ public class GUIInterfazParcial extends JFrame implements ActionListener {
             
         }
          if (e.getActionCommand().equals("Ver Resultados")){
+             GUIResultados Nueva = new GUIResultados();
+             Nueva.setVisible(true);
              for (int i = 0; i < Resultados.size(); i++) {
-                 System.out.println(Resultados.get(i));
+                if("EE.UU".equals(Resultados.get(i))){
+                    int cont=Integer.parseInt(Nueva.EEUU.getText());
+                    cont++;
+                    Nueva.EEUU.setText(Integer.toString(cont));                   
+                }
+                if("China".equals(Resultados.get(i))){
+                    int cont=Integer.parseInt(Nueva.china.getText());
+                    cont++;
+                    Nueva.china.setText(Integer.toString(cont));                   
+                }
+                if("Italia".equals(Resultados.get(i))){
+                    int cont=Integer.parseInt(Nueva.italia.getText());
+                    cont++;
+                    Nueva.italia.setText(Integer.toString(cont));                   
+                }
+                if("Francia".equals(Resultados.get(i))){
+                    int cont=Integer.parseInt(Nueva.francia.getText());
+                    cont++;
+                    Nueva.francia.setText(Integer.toString(cont));                   
+                }
+                if("España".equals(Resultados.get(i))){
+                    int cont=Integer.parseInt(Nueva.Espania.getText());
+                    cont++;
+                    Nueva.Espania.setText(Integer.toString(cont));                   
+                }
+                if("Otro".equals(Resultados.get(i))){
+                    int cont=Integer.parseInt(Nueva.OTROS.getText());
+                    cont++;
+                    Nueva.OTROS.setText(Integer.toString(cont));                   
+                }
              }
         }
     }
